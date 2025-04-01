@@ -1,1 +1,2 @@
-# af3_scripts
+# AlphaFold3 python scripts
+These script add files to the output such as pLDDT score as a file, pae plot, grid visualisation, ...
