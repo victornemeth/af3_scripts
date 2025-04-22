@@ -16,7 +16,7 @@ This repository contains a set of Python scripts that enhance AlphaFold3 outputs
 python /home/$USER/af3_scripts/pLDDT.py ${OUTPUT_DIR}
 ```
 
-This script parses all output structures in ==${OUTPUT_DIR}== and generates a CSV file with the average pLDDT score for each.
+This script parses all output structures in `${OUTPUT_DIR}` and generates a CSV file with the average pLDDT score for each.
 
 ## 🔥 Create a PAE heatmap plot per structure
 
@@ -32,7 +32,7 @@ Generates PAE (Predicted Aligned Error) heatmaps for each structure in the given
 python /home/$USER/af3_scripts/collect_cifs.py -input ${OUTPUT_DIR}
 ```
 
-Copies all .cif files from subdirectories into a single ==cifs/== folder within ==${OUTPUT_DIR}== for easy access.
+Copies all `.cif` files from subdirectories into a single `cifs/` folder within `${OUTPUT_DIR}` for easy access.
 
 ## 🔄 Convert CIF files to PDB forma
 
@@ -40,7 +40,7 @@ Copies all .cif files from subdirectories into a single ==cifs/== folder within 
 python /home/$USER/af3_scripts/cif2pdb.py -input "${OUTPUT_DIR}/cifs" -output "${OUTPUT_DIR}/pdbs"
 ```
 
-Converts all CIF structures into PDB format and saves them in a ==pdbs/== folder.
+Converts all CIF structures into PDB format and saves them in a `pdbs/` folder.
 
 ## 🧩 Generate a grid visualization
 
@@ -48,4 +48,4 @@ Converts all CIF structures into PDB format and saves them in a ==pdbs/== folder
 python /home/$USER/af3_scripts/grid.py --input_dir ${OUTPUT_DIR}
 ```
 
-Creates a visual grid summary of predictions and structures within ==${OUTPUT_DIR}==.
+Creates a visual grid summary of predictions and structures within `${OUTPUT_DIR}`.
